@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'scss/variables';
+@import 'scss/mixins';
+@import 'scss/base';
+
+.mid-container {
+    padding: 15px;
+    margin: 80px 15px 15px 15px;
+    position: relative;
+}

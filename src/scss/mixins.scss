@@ -1,0 +1,21 @@
+//Mobile and Tablet
+@mixin screen-xs {
+    @media (max-width: #{$wid-xs}) {
+        @content;
+    }
+}
+@mixin screen-sm {
+    @media (max-width: #{$wid-sm}) {
+        @content;
+    }
+}
+@mixin screen-md {
+    @media (min-width: #{$wid-md}) and (max-width: #{$wid-lg}) {
+        @content;
+    }
+}
+@mixin screen-lg {
+    @media (min-width: #{$wid-lg}) and (min-width: #{$wid-exlg}) {
+        @content;
+    }
+}

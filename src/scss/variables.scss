@@ -1,0 +1,100 @@
+/*----Color Variables----*/
+$white: #ffffff;
+$darkGrey: #545966;
+$blue-dark: #0a2c87;
+$fontNormal: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+$tabColor: #6b7fb5;
+$bg-background: #ededf6;
+$lightGrey: #d8dce6;
+
+$tableHead: #b9c8ed;
+$tableRow-light: #f0f4ff;
+
+$blue: #f00;
+
+$buttonhover: #2b549c;
+$primaryFontColor: #333333;
+$secondaryFontColor: #595959;
+
+$bg-grey-light: #f4f4f4;
+
+$purple: #7c6caa;
+$magenta: #9d2c7d;
+$magentaDark : #af5e90; 
+
+$fontBold: "FSAlbert Bold";
+$border-lightGrey: #e3e3e3;
+$offWhite:  rgba(255, 255, 255, 0.7);
+$grey: #909090;
+$lightpink: #fde9ed;
+$pink: #ef2653;
+$green: #61bb95;
+$size: 27px;
+
+/*---Breakpoints----*/
+$wid-xs: 576px;
+$wid-sm: 767px;
+$wid-md: 768px;
+$wid-lg: 1024px;
+$wid-exlg: 1200px;
+/*Mixins available in mixins.scss*/
+
+/*---Background Colors Class---*/
+.bg-white {
+    background: $white;
+}
+.bg-grey-light {
+    background: $bg-grey-light;
+}
+.border-bottom-blue6 {
+    border-bottom: 6px solid $blue;
+}
+.border-bottom-purple6 {
+    border-bottom: 6px solid $purple;
+}
+.border-bottom-magenta6 {
+    border-bottom: 6px solid $magenta;
+}
+/*---Font Size class---*/
+.font13 {
+    font-size: 13px;
+}
+.font14 {
+    font-size: 14px;
+}
+.font15 {
+    font-size: 15px;
+}
+.font16 {
+    font-size: 16px;
+}
+.font18 {
+    font-size: 18px;
+}
+.font20 {
+    font-size: 20px;
+}
+.font40 {
+    font-size: 40px;
+}
+.boxShadow-square {
+    box-shadow: 0px 0px 10px 2px #eff0f4;
+}
+.boxShadow-dark {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.075);
+}
+.boxShadow-light {
+    box-shadow: 1px 0px 5px 2px rgba(0, 0, 0, 0.05);
+}
+.borderRadius10 {
+    border-radius: 10px;
+}
+.borderRadius10-top {
+    border-radius: 10px 10px 0 0;
+}
+.borderRadius10-bottom {
+    border-radius: 0 0 10px 10px;
+}
+.text-right {
+    text-align: right;
+}

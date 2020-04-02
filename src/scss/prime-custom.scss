@@ -1,0 +1,70 @@
+@import 'variables';
+@import 'mixins';
+@import 'base';
+
+body .ui-widget {
+    font-family: $fontNormal;
+}
+
+/*Tabs*/
+
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li {
+    border: 0;
+    background-color: transparent;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li a {
+    color: $tabColor;
+    padding: 0.725em 1em;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active {
+    background-color: $white;
+    border: 0;
+    border-radius: 4px 4px 0 0;
+    box-shadow: -1px -2px 3px 0px rgba(0, 0, 0, 0.05);
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover {
+    background-color: $white;
+    border: 0;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active a {
+    color: #999;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover a {
+    color: $tabColor;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover {
+    background-color: transparent;
+    border: 0;
+}
+body .ui-tabview .ui-tabview-panels {
+    border: 0;
+    border-radius: 0 4px 4px 4px;
+    @extend .boxShadow-dark;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li:focus {
+    box-shadow: none;
+}
+
+/*Table View*/
+body .ui-table .ui-sortable-column:focus {
+    box-shadow: none;
+}
+body .ui-table .ui-table-tbody > tr > td,
+body .ui-table .ui-table-thead > tr > th {
+    border: 0;
+    text-align: left;
+}
+body .ui-table .ui-table-thead > tr > th {
+    background-color: $tableHead;
+    color: $darkGrey;
+}
+body .ui-table .ui-sortable-column .ui-sortable-column-icon {
+    color: $lightGrey;
+}
+body .ui-table .ui-table-tbody > tr:nth-child(even) {
+    background-color: $tableRow-light;
+}
+body .ui-table .ui-sortable-column:not(.ui-state-highlight):hover {
+    background-color: $tableHead;
+    color: #333333;
+}
